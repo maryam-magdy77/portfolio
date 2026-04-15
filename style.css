@@ -1,0 +1,216 @@
+    * {
+        padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2381a16a;
+        padding: 30px;
+    }
+
+    header h1 , .section1 h2, .cap h2 {
+        color: #0c4c96f1;
+        font-size: 35px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2381a1;
+        padding: 10px;
+        height: auto;
+        
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 20px;
+        height: 50px;
+    }
+
+    .link a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .link a:hover {
+        border: 3px solid whitesmoke;
+        background-color: #4dbff095;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .section1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+   
+    .section1 h2 {
+        text-align: center;
+        color: #0c4c96f1;
+        font-size: 25px;
+    }
+    .section1 p {
+        text-align: center;
+        color: #094487f1;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .section1 a ,.section2 a  {
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: aliceblue;
+        background: #2381a1;
+        padding: 10px;
+        max-width: 90%;
+        width: 300px;
+        margin:30px auto;
+        height: 40px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2381a16a;
+        height: 60px;
+        
+    }
+
+    .section1 a:hover, .section2 a:hover {
+        border: 3px solid #e5edf1;
+        background: #127ba8;
+        color: whitesmoke;
+        border-radius: 5px;
+        padding: 5px;
+    
+    }
+    [type="button"]:hover {
+        background: #127ba8;
+        color: whitesmoke;
+        padding: 10px 40px;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    /* css to Table */
+    .tab {
+        width: 100%;
+        overflow-x: auto;
+     
+    }
+    .cap h2 {
+        margin-bottom: 20px;
+    }
+    table {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        border: 3px #0a788e solid;
+        border-radius: 7px;
+    }
+    th {
+        background-color: #2381a1;
+        color: white;
+    }
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+    td {
+        background-color: #f5f5dc71;
+    }
+        
+    tr:hover {
+        background-color: #4dbff095;
+    }
+    
+
+    .section3, .section4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* css to Form */
+
+    form {
+        width: 100vw;
+    }
+    fieldset {
+    text-align: center;
+    width: 90vw;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #83c7d43e;
+    border: #2381a1 solid 3px ;
+    border-radius: 10px;
+    }
+
+    label {
+        color: #0c4c96f1;
+        text-align: left;
+        display: block;
+        padding-left: 5px;
+    }
+    input ,textarea {
+        background-color: #73c4df4e;
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border:2px #2381a1 solid;
+    }
+
+    input:hover,textarea:hover {
+    background: #e0e9ec7c;
+    }
+
+    @media (max-width: 600px){
+        .links {
+            display: block;
+        }
+        table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        header h1 {
+            font-size: 24px;
+            display: flex;
+            flex-wrap: nowrap;
+            
+        }
+        footer {
+            padding: 5px 10px;
+        }
+    }
